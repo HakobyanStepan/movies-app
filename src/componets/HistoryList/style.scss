@@ -1,0 +1,107 @@
+.history_container {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 16px;
+    background-color: #7982ba;
+
+    .history_block {
+        width: 100%;
+
+        h2 {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .history_item {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            p {
+                font-size: 18px;
+                width: 80%;
+            }
+
+            .delete_button {
+                border: none;
+                background-color: #bd2c2c;
+                color: antiquewhite;
+                padding: 10px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .no_history_message {
+        font-size: 32px;
+        color: #b81717;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .history_container {
+        .history_block {
+            h2 {
+                font-size: 22px;
+            }
+        }
+
+        .no_history_message {
+            font-size: 28px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .history_container {
+        .history_block {
+            h2 {
+                font-size: 18px;
+            }
+        }
+
+        .no_history_message {
+            font-size: 24px;
+        }
+
+        .no_history_message {
+            font-size: 24px;
+            color: #b81717;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .history_container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 12px;
+
+        .history_block {
+            h2 {
+                font-size: 16px;
+                margin-top: 10px;
+            }
+
+            .history_item {
+                p {
+                    font-size: 14px;
+                }
+
+                .delete_button {
+                    padding: 6px;
+                }
+            }
+        }
+
+        .no_history_message {
+            font-size: 20px;
+        }
+    }
+}

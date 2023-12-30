@@ -1,0 +1,22 @@
+.input_search {
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-right: 20px;
+    width: 400px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .input_search {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .input_search {
+        width: 130px;
+        margin-right: 15px;
+        padding: 8px 12px;
+    }
+}

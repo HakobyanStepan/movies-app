@@ -1,0 +1,14 @@
+.blue_button {
+    padding: 10px 20px;
+    background-color: #5050ed;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 480px) {
+    .blue_button {
+        padding: 8px 12px;
+    }
+}
